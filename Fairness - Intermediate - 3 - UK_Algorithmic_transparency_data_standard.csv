@@ -1,0 +1,49 @@
+Reference number from the word template,"attribute
+(an asterisk indicates a multi-value field)",name,tier,category,type,description,required
+,name,Name,Tier 1,Overview,UTF-8 string,The attribute 'name' is the colloquial name used to identify the algorithmic tool.,TRUE
+,description,Description,Tier 1,Overview,UTF-8 string,"The attribute 'description' is a description to give a basic overview of the purpose of the algorithmic tool. It should include:
+- how the algorithmic tool is used
+- why the algorithmic tool is being used",TRUE
+,website,URL of the website,Tier 1,Overview,URL,"The attribute 'website' is the URL reference to a page with further information about the algorithmic tool and its use. This facilitates users searching more in-depth information about the practical use or technical details.This could, for instance, be a local government page, a link to a GitHub repository or a departmental landing page with additional information.",FALSE
+,contact_email,Contact email,Tier 1,Owner and responsibility,UTF-8 string,"The attribute 'contact_email' is the email address of the organisation, team or contact person for this entry.",TRUE
+1.1,organisation,Organisation/ department,Tier 2,Owner and responsibility,UTF-8 string,"The attribute 'organisation' is the full name of the organisation, department or public sector body that carries responsibility for use of the algorithmic tool. For example, 'Department for Transport'.",TRUE
+1.2,team,Team,Tier 2,Owner and responsibility,UTF-8 string,The attribute 'team' is the full name of the team that carries responsibility for use of the algorithmic tool.,
+1.3,senior_responsible_owner,Senior responsible owner,Tier 2,Owner and responsibility,UTF-8 string,The attribute 'senior_responsible_owner' is the role title of the senior responsible owner for the algorithmic tool.,
+1.4,external_supplier*,Supplier or developer of the algorithmic tool,Tier 2,Owner and responsibility,UTF-8 string,The attribute 'supplier' gives the name of any external organisation or person that has been contracted to develop the whole or parts of or the algorithmic tool.,TRUE
+1.5,external_supplier_identifier*,External supplier identifier,Tier 2,Owner and responsibility,UTF-8 string,"The attribute 'external_supplier_identifier' gives, if available, the Companies House number of the external organisation that has been contracted to develop the whole or parts of or the algorithmic tool. You can get a company's Companies House number by finding company informationor using the Companies House API",FALSE
+1.6,external_supplier_role*,External supplier role,Tier 2,Owner and responsibility,UTF-8 string,The attribute 'external_supplier_role' gives a short description of the role the external supplier assumed with regards to the development of the algorithmic tool.,TRUE
+1.7,data_access_terms*,Terms of access to data for external supplier,Tier 2,Owner and responsibility,UTF-8 string,The attribute 'data_access_terms' details the terms of access to (government) data applied to the external supplier.,
+2.1,scope,Scope,Tier 2,Description,UTF-8 string,The attribute 'scope' describes the purpose of the tool in terms of what it's been designed for and what it's not been designed for. This can include a list of potential purposes that the tool was not designed to fulfil but which could constitute possible common misconceptions in the future.,TRUE
+2.2,benefit,Benefit,Tier 2,Description,UTF-8 string,"The attribute 'benefit' describes the key benefits that the algorithmic tool is expected to deliver, and an expanded justification on why the tool is being used.",TRUE
+2.3,alternatives_considered,Alternatives considered,Tier 2,Description,UTF-8 string,"The attribute 'alternatives_considered' details, where applicable, a list of non-algorithmic alternatives considered, or a description of how the decision process was conducted previously.",
+2.4,model_type,Type of model,Tier 2,Description,UTF-8 string,"The attribute 'model_type' indicates which types of methods or models the algorithm is using. For example expert system, deep neural network and so on.",TRUE
+2.5,frequency_usage,Frequency of usage,Tier 2,Description,UTF-8 string,"The attribute 'frequency_usage' gives information on how regularly the algorithmic tool is being used. For example the number of decisions made per month, the number of citizens interacting with the tool, and so on.",
+2.6,phase,Phase,Tier 2,Description,UTF-8 string,"The attribute 'phase' indicates in which of the following stages or phases the tool is currently situated: 
+
+- idea
+- design
+- development
+- production
+- retired
+
+This field includes date and time stamps of creation and any updates.",TRUE
+2.7,maintenance,Maintenance,Tier 2,Description,UTF-8 string,"The attribute 'maintenance' gives details on the maintenance schedule and frequency of any reviews. For example, specific details on when and how a person reviews or checks the automated decision.",
+2.8,system_architecture,System architecture,Tier 2,Description,URL,"The attribute 'system_architecture' is the URL reference to documentation about the system architecture. For example, a link to a GitHub repository image or additional documentation about the system architecture.",
+3.1,process_integration,Process integration,Tier 2,Oversight,UTF-8 string,The attribute 'process_integration' explains how the algorithmic tool is integrated into the decision-making process and what influence the algorithmic tool has on the decision-making process. It gives a more detailed and extensive description of the wider decision-making process into which the algorithmic tool is embedded.,
+3.2,provided_information,Provided information,Tier 2,Oversight,UTF-8 string,The attribute 'provided information” details how much and what information the algorithmic tool provides to the decision maker.,
+3.3,human_decisions,Human decisions,Tier 2,Oversight,UTF-8 string,"The attribute 'human_decisions' describes the decisions that people take in the overall process, including human review options.",TRUE
+3.4,required_training,Required training,Tier 2,Oversight,UTF-8 string,"The attribute 'required_training' details the required training those deploying or using the algorithmic tool must undertake, if applicable; For example, the person responsible for the management of the tool had to complete data science training.",
+3.5,appeals_and_review,Appeals and review,Tier 2,Oversight,UTF-8 string,The attribute 'appeals_and_review' details the mechanisms that are in place for review or appeal of the decision available to the general public.,TRUE
+4.1,source_data_name*,Source data name,Tier 2,Information on data,UTF-8 string,"The attribute 'source_data_name' gives, if applicable, the name of the datasets used.",TRUE
+4.2,source_data_description*,Source data,Tier 2,Information on data,UTF-8 string,"The attribute 'source_data' gives an overview of the data used to train and run the algorithmic tool. It will also specify whether data is used for training, testing, or operating. It should include which categories of data - for example 'age' or 'address' - which were used to train the model and which are used as input data for making a prediction.",TRUE
+4.3,source_data_url*,Source data URL,Tier 2,Information on data,URL,The attribute 'source_data_url' provides a URL to the dataset wherever possible.,FALSE
+4.4,data_collection*,Data collection,Tier 2,Information on data,UTF-8 string,"The attribute 'data_collection' gives information on the data collection process, including the original purpose of data collection.",TRUE
+4.5,data_sharing_agreements*,Data sharing agreements,Tier 2,Information on data,UTF-8 string,The attribute 'data_sharing_agreements' provides further information on data sharing agreements in place.,TRUE
+4.6,data_access_and_storage*,Data access and storage,Tier 2,Information on data,UTF-8 string,"The attribute 'data_access_and_storage' details on who has or will have access to this data, how long it's stored, under what circumstances and by whom.",TRUE
+5.1,impact_assessment_name*,Impact assessment name,Tier 2,Risk mitigation and impact assessment,UTF-8 string,The attribute 'impact_assessment_name' is a name and a short overview of the impact assessment conducted.,TRUE
+5.2,impact_assessment_description*,Impact assessment description,Tier 2,Risk mitigation and impact assessment,UTF-8 string,The attribute 'impact_assessment_description' is a description of the impact assessments conducted.,
+5.3,impact_assessment_date*,Impact assessment date,Tier 2,Risk mitigation and impact assessment,UTF-8 string,The attribute 'impact_assessment_date' is a date of when the impact assessment was conducted.,
+5.4,impact_assessment_link*,Impact assessment link,Tier 2,Risk mitigation and impact assessment,UTF-8 string,The attribute 'impact_assessment_link' is a link to the impact assessment.,
+5.5,risk_name*,Risk name,Tier 2,Risk mitigation and impact assessment,UTF-8 string,The attribute 'risk_name' is an overview of the common risks for the algorithmic tool.,TRUE
+5.6,risk_description*,Risk description,Tier 2,Risk mitigation and impact assessment,UTF-8 string,The attribute 'risk_description' is a description of the risks identified under 'risk_name'.,
+5.7,risk_mitigation*,Risk mitigation,Tier 2,Risk mitigation and impact assessment,UTF-8 string,The attribute 'risk mitigation' is an overview of how the risks have been mitigated.,
